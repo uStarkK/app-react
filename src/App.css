@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    align-items: center;
+}
+
+.navBarElement a
+{
+    text-decoration: none;
+    color: aqua;
+    background-color: rgb(49, 49, 49);
+    border-radius: 15px;   
+    padding: 15px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
