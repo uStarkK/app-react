@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-color: rgb(41, 40, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .NavBar{
     display: flex;
@@ -11,7 +12,7 @@ body{
 .navBarElement a
 {
     text-decoration: none;
-    color: aqua;
+    color: rgb(243, 147, 2);
     background-color: rgb(49, 49, 49);
     border-radius: 15px;   
     padding: 15px;
@@ -20,4 +21,14 @@ body{
 .logo{
     height: 50px;
     width: 50px;
+}
+
+.carrito{
+    height: 50px;
+    width: 50px;
+}
+.itemList{
+    margin-top: 2%;
+    color: rgb(243, 147, 2);
+    text-decoration: solid;
 }
