@@ -34,18 +34,6 @@ body{
 }
 
 
-.countContainer{
-    color: rgb(243, 147, 2);
-    margin-top: 3%;
-    background-color: rgb(109, 104, 104);
-    width: 15%;
-    height: auto;
-    border-radius: 10px;
-    text-align: center;
-    padding-bottom: 1%;
-
-}
-
 .count{
     margin-left: 2%;
     color: black;
@@ -54,7 +42,37 @@ body{
     justify-content: space-around;;
 }
 
+.count button{
+    border-radius: 8px;
+    width: 15%;
+}
 .countContainer img{
     width: 40%;
     height: 40%;
+}
+
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(243, 147, 2);
+    margin-top: 3%;
+    background-color: rgb(109, 104, 104);
+    width: 15%;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.productos img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+    border-radius: 5px;
 }

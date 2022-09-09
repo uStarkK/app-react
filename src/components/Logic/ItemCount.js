@@ -15,9 +15,6 @@ const checkStockRem = () =>{
 }
 return (
     <div className='countContainer'>
-        <p>Toallas de Independiente</p>
-        <img src="toalla.jpg" alt="toalla de independiente"></img>
-        <p> Cantidad en stock: {stock} </p>
         <div className='count'>
         <button onClick={() => checkStockRem()}>-</button>
         <p className='countDisplay'> {initial + count}</p>
