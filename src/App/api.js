@@ -6,7 +6,7 @@ export const getProductos = () => {
                     {
                         producto: "Fideos",
                         marca: "Don Vicente",
-                        stock: 20,
+                        stock: 0,
                         precio: 38,
                         picURL:"fideos.jpg"
                     },
