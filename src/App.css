@@ -9,6 +9,10 @@ body{
     align-items: center;
 }
 
+.uwu{
+    color:rgb(243, 147, 2) ;
+}
+
 .navBarElement a
 {
     text-decoration: none;
@@ -75,4 +79,9 @@ body{
     margin-bottom: 2%;
     width: 40%;
     border-radius: 5px;
+}
+
+.productImg:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 1%;
 }

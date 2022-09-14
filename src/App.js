@@ -1,16 +1,11 @@
-
-import NavBar from './components/Containers/NavBar';
 import "./App.css"
-import ItemListContainer from './components/Containers/ItemListContainer';
+import Router from "./App/Router"
+import ItemDetailContainer from "./components/Containers/ItemDetailContainer";
 
-function App() {
+function App() { 
   return (
-    
-    <div className="App">
-      <NavBar/>
-      <ItemListContainer greetings="Hola soy un prop, y te estoy saludando"/>
-    </div>
-  );
+    <Router/>
+  )   
 }
 
 export default App;

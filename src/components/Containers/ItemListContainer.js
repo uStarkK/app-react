@@ -1,20 +1,28 @@
-import ItemCount from "../Logic/ItemCount"
 import ItemList from "../Logic/ItemList"
 import { useEffect, useState } from "react"
 import { getProductos } from "../../App/api"
 
 
 const ItemListContainer = ({ greetings }) => {
-    const [product, setProduct] = useState([]);
-
+    const [loading, setLoading] = useState(true)
+    const [products, setProducts] = useState([]);
     useEffect(() => {
         getProductos().then((data) => {
-            setProduct(data)
+            setProducts(data)
+            setLoading(false)
         })
     }, [])
+    if (loading) {
+        return (
+            <div className='loadingContainer'>
+                <h1 className='loading'>LOADING</h1>
+            </div>
+        )
+    }
     return (
         <div className="itemList">{greetings}
-            <ItemList datos={product} />
+            <ItemList datos={products} />
+
         </div>
 
     )
