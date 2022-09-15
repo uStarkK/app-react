@@ -10,7 +10,7 @@ export const getProductos = () => {
                         precio: 38,
                         picURL: "../../fideos.jpg",
                         id: 1,
-                        peso: "500gr"
+                        desc: " Peso: 500gr"
                         
                     },
                     {
@@ -20,7 +20,7 @@ export const getProductos = () => {
                         precio: "17 (Kilo)",
                         picURL: "../../papa.jpg",
                         id: 2,
-                        desc: "La mejor papa del condado, cultivada y cuidada por los mejores granjeros de la zona, traida a ti gracias al mejor sistema de transporte disponible. Rica y deliciosa, la papa Besto Potato es considerada una de las mejores papas de la industria nacional"
+                        desc: "Descripción: La mejor papa del condado, cultivada y cuidada por los mejores granjeros de la zona, traida a ti gracias al mejor sistema de transporte disponible. Rica y deliciosa, la papa Besto Potato es considerada una de las mejores papas de la industria nacional"
                     },
                     {
                         producto: "Gaseosa",
@@ -28,7 +28,8 @@ export const getProductos = () => {
                         stock: 17,
                         precio: 53,
                         picURL: "../../manaos.jpg",
-                        id: 3
+                        id: 3,
+                        desc: "Contenido: 2.44Lts."
                     },
                     {
                         producto: "Salchichas",
@@ -36,7 +37,8 @@ export const getProductos = () => {
                         stock: 30,
                         precio: 80,
                         picURL: "../../salchichas.jpg",
-                        id: 4
+                        id: 4,
+                        desc: "Contenido: 12 Salchichas, combinadas con la mejor soja disponible, para un intenso y exquisito sabor"
                     },
                     {
                         producto: "Toallas",
@@ -44,7 +46,8 @@ export const getProductos = () => {
                         stock: 27,
                         precio: 22,
                         picURL: "../../toalla.jpg",
-                        id: 5
+                        id: 5,
+                        desc: "Toallas Mediapizza. Confiables, duraderas y útiles para toda ocasión! Hechas de 100% de algodon natural y fabricadas en su totalidad dentro del país"
                     },
                     {
                         producto: "Guantes",
@@ -52,7 +55,8 @@ export const getProductos = () => {
                         stock: 32,
                         precio: 125,
                         picURL: "../../guantes.jpg",
-                        id: 6
+                        id: 6,
+                        desc: "El mejor equipo se encuentra en Galvan Morales. Estos guantes fueron diseñados por un grupo de expertos, su comodidad está garantizada!"
                     },
                     {
                         producto: "Galletitas",
@@ -60,7 +64,8 @@ export const getProductos = () => {
                         stock: 19,
                         precio: 27,
                         picURL: "../../galletitas.jpg",
-                        id: 7
+                        id: 7,
+                        desc: "Galletitas Terrabusi. La mejor marca  - Peso: 450gr"
                     },
                     {
                         producto: "Queso",
@@ -68,7 +73,9 @@ export const getProductos = () => {
                         stock: 22,
                         precio: 82,
                         picURL: "../../queso.jpg",
-                        id: 8
+                        id: 8,
+                        desc: "Contenido: 300gr de queso rallado La Serenisima. Ideal para saborizar tus comidas"
+
                     },
                     {
                         producto: "Leche",
@@ -76,7 +83,8 @@ export const getProductos = () => {
                         stock: 16,
                         precio: 64,
                         picURL: "../../leche.png",
-                        id: 9
+                        id: 9,
+                        desc: "Leche entera El Amanecer. Contenido: 1Lt"
                     },
                     {
                         producto: "Nachos",
@@ -84,7 +92,8 @@ export const getProductos = () => {
                         stock: 20,
                         precio: 65,
                         picURL: "../../doritos.jpg",
-                        id: 10
+                        id: 10,
+                        desc: "Deliciosos y exquisitos Doritos. El mejor snack que podría haber en tu mesa"
                     },
                     {
                         producto: "Pan Lactal",
@@ -92,7 +101,8 @@ export const getProductos = () => {
                         stock: 21,
                         precio: 41,
                         picURL: "../../pan.png",
-                        id: 11
+                        id: 11,
+                        desc: "Panacity trae para vos su Pan Lactal, económico y delicioso para que puedas empezar tu día con una buena tostada. Contenido: 450gr"
                     },
                     {
                         producto: "Jabon",
@@ -100,7 +110,8 @@ export const getProductos = () => {
                         stock: 27,
                         precio: 52,
                         picURL: "../../jabon.jpg",
-                        id: 12
+                        id: 12,
+                        desc: "Peso: 150gr. Jabón corporal Martata. Aroma a frambuesa"
                     },
                     {
                         producto: "Agua Mineral",
@@ -108,7 +119,8 @@ export const getProductos = () => {
                         stock: 19,
                         precio: 47,
                         picURL: "../../agua.jpg",
-                        id: 13
+                        id: 13,
+                        desc: "Contenido: 500ml. Agua mineral extraída de las montañas del himalaya"
                     },
                     {
                         producto: "Chocolate",
@@ -116,7 +128,8 @@ export const getProductos = () => {
                         stock: 25,
                         precio: 75,
                         picURL: "../../chocolate.jpg",
-                        id: 14
+                        id: 14,
+                        desc: "Peso: 230gr. Chocolate ChocoChoco, delicioso y económico"
                     },
                     {
                         producto: "Harina",
@@ -124,7 +137,8 @@ export const getProductos = () => {
                         stock: 21,
                         precio: 40,
                         picURL: "../../harina.jpg",
-                        id: 15
+                        id: 15,
+                        desc: "Peso: 617gr. Harina 000 Pureza, especial para tu cocina. "
                         
                     }
                 ]

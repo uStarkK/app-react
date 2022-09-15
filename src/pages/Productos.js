@@ -7,7 +7,7 @@ const Productos = () => {
         <div>
             <NavBar/>
             <ItemListContainer greetings="Aqui podra buscar y añadir productos al carrito"/>
-            <ItemDetailContainer />
+            {/* <ItemDetailContainer /> */}
         </div>
     )
 }
