@@ -13,7 +13,7 @@ body{
     color:rgb(243, 147, 2) ;
 }
 
-.navBarElement a
+.navBarElement, .navBarElement a
 {
     text-decoration: none;
     color: rgb(243, 147, 2);
