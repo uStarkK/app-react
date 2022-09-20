@@ -92,3 +92,12 @@ body{
     border-radius: 5px;
     width: 70%;
 }
+
+.countLinks {
+    display: flex;
+}
+
+.countLinks a:visited{
+    text-decoration: none;
+    color: black
+}

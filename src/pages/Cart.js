@@ -4,7 +4,7 @@ const Cart = () => {
     return (
         <div>Cart
             <NavBar/>
-            <p className="uwu">Haga click en Productos, aca no hay nada. No existe (por ahora)</p>
+            <p className="uwu">Le damos la bienvenida a su carrito de Compra! Aqui encontrará todos los productos que ha elegido, pero cuya compra aún no ha sido confirmada.</p>
         </div>
     )
 }

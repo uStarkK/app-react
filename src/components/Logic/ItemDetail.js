@@ -1,14 +1,20 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import Swal from "sweetalert2"
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const ItemDetail = ({product}) => {
+  const [count, setCount] = useState(0);
+  let c = 0;
   const onAdd = (stock, count, initial) => {
     if (stock > 0 && initial > 0) {
         Swal.fire(
             `BUENARDO AGREGASTE ${count + initial} ${product.producto} "${product.marca}" AL CARRITO `,
             ``,
             'success')
+            c = initial
+            setCount(c)
     } else if (stock <= 0) {
         Swal.fire({
             icon: 'error',
@@ -28,7 +34,15 @@ const ItemDetail = ({product}) => {
             <div>Cantidad en stock: {product.stock}</div>
             <div>Precio: ${product.precio} </div>
             <div>{product.desc}</div>
-            <ItemCount stock={product.stock} initial={1} onAdd={onAdd} />
+            {
+              count === 0 ? 
+                <ItemCount stock={product.stock} initial={1} onAdd={onAdd} />
+                :
+                <div className='countLinks'>
+                  <Link to={"/cart"}>Terminar Compra</Link> 
+                  <Link to={"/products/"}>Seguir comprando</Link>
+                </div>
+            }
     </div> 
 
   )
