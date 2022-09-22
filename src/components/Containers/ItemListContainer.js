@@ -1,17 +1,22 @@
 import ItemList from "../Logic/ItemList"
 import { useEffect, useState } from "react"
 import { getProductos } from "../../App/api"
+import { useParams } from "react-router-dom"
 
 
 const ItemListContainer = ({ greetings }) => {
+    const {categoryId} = useParams()
+    const [products, setProduct] = useState({});
+    const [category, setCategory] = useState({})
     const [loading, setLoading] = useState(true)
-    const [products, setProducts] = useState([]);
     useEffect(() => {
         getProductos().then((data) => {
-            setProducts(data)
+            const filteredData = data.filter(products => products.category == categoryId)
+            setCategory(filteredData)
+            setProduct(data)
             setLoading(false)
         })
-    }, [])
+    }, [categoryId])
     if (loading) {
         return (
             <div className='loadingContainer'>
@@ -21,10 +26,8 @@ const ItemListContainer = ({ greetings }) => {
     }
     return (
         <div className="itemList">{greetings}
-            <ItemList datos={products} />
-
+            <ItemList datos={products} filter={category} category={categoryId} />
         </div>
-
     )
 }
 

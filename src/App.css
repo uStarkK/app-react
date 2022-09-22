@@ -21,7 +21,18 @@ body{
     border-radius: 15px;   
     padding: 15px;
 }
-
+.categoryElement{
+    display: flex;
+    justify-content: space-evenly;
+}
+.categoryElement a{
+    text-decoration: none;
+    color: rgb(243, 147, 2);
+    background-color: rgb(49, 49, 49);
+    border-radius: 15px;   
+    padding: 15px;
+    text-align: center;
+}
 .logo{
     height: 50px;
     width: 50px;
