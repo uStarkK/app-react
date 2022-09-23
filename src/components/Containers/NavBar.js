@@ -10,7 +10,7 @@ const NavBar = () => {
             <div className="navBarElement"><Link to="/aboutus/"> Nosotros</Link></div>
             <div className="navBarElement"><Link to="/contact/"> Contacto</Link></div>
             <div className="navBarElement"><Link to="/login/"> Log-In</Link></div>
-            <CartWidget/>
+            <div className="navBarElement"><Link to="/cart"> <img className="carrito" src="../carrito.png" alt="carrito"></img></Link></div>
         </div>
     )
 }

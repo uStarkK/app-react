@@ -1,13 +1,14 @@
 import "./App.css"
-import Provider from "./App/Provider";
+
 import Router from "./App/Router"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CartProvider } from "./App/carrito";
 
 function App() { 
   return (
-    <Provider>
+    <CartProvider>
       <Router/>
-    </Provider>
+    </CartProvider>
   )   
 }
 
