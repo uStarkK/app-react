@@ -6,6 +6,7 @@ const Productos = () => {
     return (
         <div>
             <NavBar/>
+            <h1 className="categoryH1">Categorias</h1>
             <div className="categoryElement">
                 <Link to="/products/category/food"> Alimentos </Link>
                 <Link to="/products/category/cleaning"> Limpieza </Link>

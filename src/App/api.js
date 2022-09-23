@@ -155,10 +155,20 @@ export const getProductos = () => {
                         desc: "Peso: 617gr. Harina 000 Pureza, especial para tu cocina. ",
                         category: "food"
                         
+                    },
+                    {
+                        producto: "Buscapiña",
+                        marca: "Reatrevido",
+                        stock: 99,
+                        precio: 1,
+                        id: 16,
+                        desc: "Por qué me voy a las manos si siempre tomo... Buscapiña?!?!?!?!",
+                        category: "food",
+                        picURL: "../../buscapiña.jpg"
                     }
                 ]
             );
-        }, 2000)
+        }, 10)
     })
     return promesa
 }

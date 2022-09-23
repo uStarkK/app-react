@@ -4,7 +4,13 @@ const Contact = () => {
     return (
         <div>
             <NavBar/>
-            <p className="uwu">Haga click en Productos, aca no hay nada. No existe (por ahora)</p>
+            <div className='contacto'>
+                <h1>Información de contacto
+                    <p>Email: refa_chero@gmail.com </p>
+                    <p>WhatsApp: +54 9 223 1234567</p>
+                    <p>También puedes contactarnos por Instagram y Facebook!: Refa_chero</p>
+                </h1>
+            </div>
         </div>
     )
 }

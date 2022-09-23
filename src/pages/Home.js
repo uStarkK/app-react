@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div>
             <NavBar/>
-            <p className="uwu">Haga click en Productos, aca no hay nada. No existe (por ahora)</p>
+            <p className="uwu">Bienvenido a Refachero! La página de inicio se encuentra en desarrollo, pero sientase libre de navegar por el sitio como usted desee!</p>
         </div>
         
     )

@@ -1,6 +1,11 @@
-body{
+*{
+    padding: 0;
+    margin: 0;
+}
+.dark{
     background-color: rgb(41, 40, 40);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0.5%;
 }
 .NavBar{
     display: flex;
@@ -21,6 +26,9 @@ body{
     border-radius: 15px;   
     padding: 15px;
 }
+.navBarElement a:hover{
+    color: rgb(255, 188, 88);
+}
 .categoryElement{
     display: flex;
     justify-content: space-evenly;
@@ -33,11 +41,21 @@ body{
     padding: 15px;
     text-align: center;
 }
+.categoryElement a:hover{
+    color: rgb(255, 188, 88);
+}
+.categoryH1{
+    text-align: center;
+    color: rgb(243, 147, 2);
+}
 .logo{
     height: 50px;
     width: 50px;
 }
+.cartAddBtn{
+    margin-top: 1%;
 
+}
 .carrito{
     height: 50px;
     width: 50px;
@@ -106,9 +124,187 @@ body{
 
 .countLinks {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: center;
 }
-
+.countLinks a{
+    margin-top: 5%;
+    color: orange;
+    background-color: rgb(0,0,0,0.8);
+    border-color: black;
+    padding: 3%;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.countLinks a:hover{
+    color:#ecc495;
+}
 .countLinks a:visited{
     text-decoration: none;
-    color: black
+}
+
+
+
+/* LOGIN CSS */
+.container_cuenta
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+fieldset
+{
+    border: none;
+}
+.cuenta
+{
+
+    display: flex;
+    flex-direction: column;
+    color: #fa8908;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2%;
+    border-radius: 25px;
+    }
+.cuenta p{
+    background-color: black;
+        color: #fa8908;
+        display: block;
+        margin-left: 30%;
+        margin-right: 30%;
+        border-radius: 25px;
+        margin-top: 10px;
+        padding: 1.5%
+}
+.cuenta a
+    {
+        color: #fa8908;
+        margin-top: 25px;
+    }
+.cuenta a:hover
+    {
+        color: #f3ab59;
+    }
+label
+{
+    background-color: black;
+    color: #fa8908;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 1.5%
+}
+#GET-name, #GET-password
+{
+    background-color: black;
+    color: white;
+    margin: 10px 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.crear_cuenta 
+{
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.crear_cuenta p{
+    background-color: black;
+    color: #fa8908;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 1.5%
+}
+
+
+#create-user, #create-password, #GET-email  
+{
+    background-color: black;
+    color: white;
+    margin: 10px 15px;
+    padding: 20px;
+}
+::-ms-reveal
+{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+    background-color: white;
+}
+
+.licencia p
+{
+    background-color: black;
+    color: #fa8908;
+}
+.licencia a:hover
+{
+    color: #f3ab59;
+}
+
+#create-acc
+{
+    width: 55%;
+    align-self: center;
+    border-radius: 25px;
+    text-shadow: 3px 2px 1px #fa8908;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: black;
+    font-size: 25px;
+    padding: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, #fa8908, #f5e610);
+}
+
+#create-acc:active{
+    background-image: linear-gradient(to bottom, #f5e610, #fa8908);
+}
+
+
+/* NOSOTROS CSS */
+
+.aboutUsP{
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: large;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+
+/* CONTACTO */
+
+
+.contacto{
+    text-align: center;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(243, 147, 2);
+}
+
+.contacto p{
+    background-color: rgb(0,0,0,0.6);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.cartConfirm{
+    display: flex;
+    justify-content: center;
+    color:rgb(243, 147, 2);
+    margin-top: 1%;
 }

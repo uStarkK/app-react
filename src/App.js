@@ -1,10 +1,13 @@
 import "./App.css"
+import Provider from "./App/Provider";
 import Router from "./App/Router"
-import ItemDetailContainer from "./components/Containers/ItemDetailContainer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() { 
   return (
-    <Router/>
+    <Provider>
+      <Router/>
+    </Provider>
   )   
 }
 
