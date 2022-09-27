@@ -1,11 +1,12 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { CartContext } from '../../App/carrito';
 
-
 function ItemCount({ stock, initial, onAdd, cart, product }) {
     const [count, setCount] = useState(0);
-    const {removeItem} = useContext(CartContext)
+    const {removeItem, addItem} = useContext(CartContext)
+    const [count2, setCount2] = useState()
+
     const checkStockAdd = () => {
         if (count < stock - 1 && stock !== 0) {
             setCount(count + 1)
@@ -22,9 +23,9 @@ function ItemCount({ stock, initial, onAdd, cart, product }) {
                 cart === "yes" ?
                     <div className='countContainer'>
                         <div className='count'>
-                            <Button variant="light" onClick={() => removeItem(product)}>-</Button>
+                            <Button variant="light" onClick={() => removeItem(product, setCount2)}>-</Button>
                             <p className='countDisplay'> {product.cantidad!==0? product.cantidad : <button onClick={()=>removeItem(product)}><img src="../tachobasura.png"></img></button>}</p>
-                            <Button variant="light" onClick={checkStockAdd}>+</Button>
+                            <Button variant="light" onClick={() => addItem(product, setCount2)}>+</Button>
                         </div>
                     </div>
                     :

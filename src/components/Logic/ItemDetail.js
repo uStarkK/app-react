@@ -7,7 +7,7 @@ import { CartContext } from '../../App/carrito'
 
 const ItemDetail = ({ product }) => {
   const [count, setCount] = useState(0);
-  const { addToCart, inCart } = useContext(CartContext)
+  const { addToCart, isInCart, cart } = useContext(CartContext)
   let c = 0;
   
   const onAdd = (stock, count, initial) => {
@@ -22,8 +22,11 @@ const ItemDetail = ({ product }) => {
         cat: product.category,
         stock: product.stock
       }
-      if(inCart(newProduct)){
+      if(isInCart(newProduct)){
         console.log("Item en carrito")
+        const index = cart.map(ele => ele.nombre).indexOf(newProduct.nombre)
+        cart[index].cantidad = newProduct.cantidad
+        console.log(cart[index])
       } else{
         addToCart(newProduct)
       }
