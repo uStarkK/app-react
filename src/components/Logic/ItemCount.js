@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import { CartContext } from '../../App/carrito';
+import { CartContext } from '../../App/carritoContext';
 
 function ItemCount({ stock, initial, onAdd, cart, product }) {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(initial);
     const {removeItem, addItem} = useContext(CartContext)
     const [count2, setCount2] = useState()
 
@@ -32,7 +32,7 @@ function ItemCount({ stock, initial, onAdd, cart, product }) {
                     <div className='countContainer'>
                         <div className='count'>
                             <Button variant="light" onClick={checkStockRemove}>-</Button>
-                            <p className='countDisplay'> {initial + count}</p>
+                            <p className='countDisplay'> {count}</p>
                             <Button variant="light" onClick={checkStockAdd}>+</Button>
                         </div>
                         <Button className='cartAddBtn' variant="outline-dark" onClick={() => onAdd(stock, count, initial)}>Agregar al carrito</Button>

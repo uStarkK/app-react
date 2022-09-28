@@ -3,12 +3,11 @@ import ItemCount from './ItemCount'
 import Swal from "sweetalert2"
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CartContext } from '../../App/carrito'
+import { CartContext } from '../../App/carritoContext'
 
 const ItemDetail = ({ product }) => {
   const [count, setCount] = useState(0);
   const { addToCart, isInCart, cart } = useContext(CartContext)
-  let c = 0;
   
   const onAdd = (stock, count, initial) => {
     if (stock > 0) {
@@ -16,7 +15,7 @@ const ItemDetail = ({ product }) => {
         nombre: product.producto,
         precio: product.precio,
         marca: product.marca,
-        cantidad: count + initial,
+        cantidad: count,
         id: product.id,
         img: product.picURL,
         cat: product.category,
@@ -30,8 +29,7 @@ const ItemDetail = ({ product }) => {
       } else{
         addToCart(newProduct)
       }
-      c = initial
-      setCount(c)
+      setCount(1)
 
     } else if (stock <= 0) {
       Swal.fire({

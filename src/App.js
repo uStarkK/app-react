@@ -2,7 +2,7 @@ import "./App.css"
 
 import Router from "./App/Router"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CartProvider } from "./App/carrito";
+import { CartProvider } from "./App/carritoContext";
 
 function App() { 
   return (

@@ -29,6 +29,7 @@
 .navBarElement a:hover{
     color: rgb(255, 188, 88);
 }
+
 .categoryElement{
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +58,7 @@
 
 }
 .carrito{
-    height: 50px;
+    height: 20%;
     width: 50px;
 }
 .itemList{
@@ -101,6 +102,20 @@
     border-radius: 10px;
     text-align: center;
     padding-bottom: 1%;
+    margin-right: 3%;
+}
+
+.cartConfirm{
+    display: flex;
+    justify-content: center;
+    color:rgb(243, 147, 2);
+    margin-top: 1%;
+}
+
+.listContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .productImg{
@@ -301,9 +316,3 @@ label
     border-radius: 10px;
 }
 
-.cartConfirm{
-    display: flex;
-    justify-content: center;
-    color:rgb(243, 147, 2);
-    margin-top: 1%;
-}
