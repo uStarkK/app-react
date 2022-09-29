@@ -13,7 +13,7 @@ function ItemCount({ stock, initial, onAdd, cart, product }) {
         }
     }
     const checkStockRemove = () => {
-        if (count > 0) {
+        if (count > 1) {
             setCount(count - 1)
         }
     }

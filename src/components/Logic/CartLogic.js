@@ -34,7 +34,7 @@ const CartLogic = () => {
         <div className='cartContainer'>
             <div className="listContainer">
                 {cart.map((item) =>
-                    <div key={item.id} className="productos">
+                    <div key={item.id} className="cartProductos">
                         <div>{item.nombre}</div>
                         <div>{item.marca}</div>
                         <div>Precio Individual: ${parseInt(item.precio)}</div>
