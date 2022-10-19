@@ -9,7 +9,7 @@ const ItemDetail = ({ product }) => {
   const [count, setCount] = useState(0);
   const { addToCart, isInCart, cart } = useContext(CartContext)
 
-  const onAdd = (stock, count, initial) => {
+  const onAdd = (stock, count) => {
     if (stock > 0) {
       const newProduct = {
         nombre: product.producto,

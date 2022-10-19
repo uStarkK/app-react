@@ -7,6 +7,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 0.5%;
 }
+
+
 .NavBar{
     display: flex;
     justify-content: space-between;
@@ -14,7 +16,7 @@
     align-items: center;
 }
 
-.uwu{
+.info{
     color:rgb(243, 147, 2) ;
 }
 
@@ -68,7 +70,8 @@
 }
 
 
-.count{
+
+.count, .countCart{
     margin-left: 2%;
     color: black;
     display: flex;
@@ -81,6 +84,20 @@
     justify-content: center;
     border-radius: 8px;
     width: 20%;
+}
+
+.countCart button{
+    border-radius: 8px;
+    width: 20%;
+}
+
+.closeContainer{
+    align-self: flex-end;
+}
+
+.close{
+    padding-top: 50%;
+    padding-right: 10px;
 }
 .countContainer img{
     width: 100%;
@@ -110,6 +127,34 @@
     width: 35%;
     align-items: center;
     padding: 1%;
+}
+
+.dataContainer{
+    color: rgb(243, 147, 2);
+    text-shadow: 1px 1px 2px black;
+    padding: 1%;
+}
+
+.purchaseDetail{
+    display: flex;
+    color: rgb(243, 147, 2);
+    text-shadow: 1px 1px 2px black;
+    width: 20%;
+    border-radius: 10px;
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.purchaseDetail img{
+    margin-left: 30%;
+}
+
+.purchaseContainer{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .productos{
@@ -201,7 +246,7 @@
 
 
 /* LOGIN CSS */
-.container_cuenta
+.container_user
 {
     display: flex;
     justify-content: center;
@@ -262,11 +307,20 @@ label
     padding: 20px;
 }
 
-.crear_cuenta 
+.userInfo
 {
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
     border-radius: 25px;
+    width: 40vw;
+    padding-bottom: 3%;
+    color: black;
+}
+
+.userInfo input{
+    padding: 1%;
+    width: 70%;
+    border-radius: 10px;
 }
 
 .crear_cuenta p{

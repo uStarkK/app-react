@@ -5,7 +5,7 @@ const Cart = () => {
     return (
         <div>
             <NavBar/>
-            <p className="uwu">Le damos la bienvenida a su carrito de Compra! Aqui encontrará todos los productos que ha elegido, pero cuya compra aún no ha sido confirmada.</p>
+            <p className="info">Le damos la bienvenida a su carrito de Compra! Aqui encontrará todos los productos que ha elegido, pero cuya compra aún no ha sido confirmada.</p>
             <div><CartLogic/></div>
         </div>
     )

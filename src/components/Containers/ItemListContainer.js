@@ -1,19 +1,18 @@
 import ItemList from "../Logic/ItemList"
 import { useEffect, useState } from "react"
-import { getProductos } from "../../App/api"
 import { useParams } from "react-router-dom"
-
+import { getItems } from "../../App/api"
 
 const ItemListContainer = ({ greetings }) => {
     const {categoryId} = useParams()
-    const [products, setProduct] = useState({});
+    const [products, setProducts] = useState({});
     const [category, setCategory] = useState({})
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        getProductos().then((data) => {
+        getItems("productos").then((data) => {
             const filteredData = data.filter(products => products.category == categoryId)
             setCategory(filteredData)
-            setProduct(data)
+            setProducts(data)
             setLoading(false)
         })
     }, [categoryId])

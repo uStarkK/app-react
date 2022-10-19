@@ -4,7 +4,7 @@ import NavBar from '../components/Containers/NavBar'
 const AboutUs = () => {
     return (
         <div><NavBar/>
-        <div className='uwu'>
+        <div className='info'>
             <h1>Somos Refachero!:
                 <p className='aboutUsP'>Un pequeño comercio dedicado a la venta online de productos, tales como alimentos, accesorios para el cuerpo y productos para la higiene y la limpieza</p>
                 <p className='aboutUsP'>Llevamos más de 10 años en el mercado y contamos con el apoyo de más de 1000 fieles clientes que prefieren nuestro servicio</p>

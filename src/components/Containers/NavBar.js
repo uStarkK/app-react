@@ -9,7 +9,7 @@ const NavBar = () => {
             <div className="navBarElement"><Link to={"/products/"}>Productos</Link></div>
             <div className="navBarElement"><Link to="/aboutus/"> Nosotros</Link></div>
             <div className="navBarElement"><Link to="/contact/"> Contacto</Link></div>
-            <div className="navBarElement"><Link to="/login/"> Log-In</Link></div>
+            <div className="navBarElement"><Link to="/account/"> Cuenta </Link></div>
             <CartWidget/>
         </div>
     )
