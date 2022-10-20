@@ -38,7 +38,7 @@ const AddProduct = () => {
                 <p className="info">Ingrese categoria</p>
                 <input type="text" style={{width:250}} placeholder="food, accesories, cleaning" onChange={e => setProductCategory(e.target.value) }required></input>
                 <p className="info">Añada la ruta de la imagen de su producto, por defecto ../../images/"nombre de la imagen".png/jpg:</p>
-                <input type="file" placeholder="Imagen" onChange={e => setProductImg(e.target.value) }required></input>
+                <input type="text" placeholder="Imagen" onChange={e => setProductImg(e.target.value) }required></input>
                 <button onClick={async() => {
                     await createItem({producto: productName, precio: productPrice, category: productCategory, desc: productDesc, marca: productBrand, picURL: productImg, stock: productStock}, "productos")
                     success()
